@@ -24,7 +24,6 @@
  例　`python digibookshelf.py`
 
 2. メニュー画面が出てきます。 メニュー項目に応じた1~6の半角数字を入力してください
-    >0: Show all books  :登録されている本の全てのタイトルと未既読状態を表示します  
     >1: Add a Book      :本を登録します  
     >2: Edit a Book     :登録済みの本の内容を修正します  
     >3: Search for Book  ：登録した本を検索します  

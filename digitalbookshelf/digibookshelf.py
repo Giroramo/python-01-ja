@@ -43,18 +43,12 @@ def display_statistics(books):
     print(f"Read books: {read_books}")
     print(f"Unread books: {unread_books}")
 
-def display_all_books(books):
-        print("title - reading status")
-        for book in books:
-            print(f"{book['title']} - {book['status']}")
-
 
 def display_menu():
     #ブックシェルフの操作メニューを表示します。
     print("================================================")    
     print("Welcome to your personal books digital library!")
     print("================================================")    
-    print("0: Show all books")
     print("1: Add a Book")
     print("2: Edit a Book")
     print("3: Search for Book")
@@ -165,9 +159,6 @@ def main():
         elif choice == "6":
             print("Exiting...")
             break
-        #追加メニューメニュー　登録内容全表示
-        elif choice == "0":
-            display_all_books(books)
         else:
             print("Invalid choice. Please input a number between 1 and 6.")
 
