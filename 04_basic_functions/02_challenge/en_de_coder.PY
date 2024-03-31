@@ -25,3 +25,10 @@ encoded = encode(message)
 print(encoded)  # 出力: 72 101 108 108 111 32 87 111 114 108 100
 decoded = decode(encoded)
 print(decoded)  # 出力: Hello World
+
+# 空入力のテスト
+empty_encoded = encode("")
+print(empty_encoded)  # 出力: Empty input
+
+empty_decoded = decode("")
+print(empty_decoded)  # 出力: Empty input
