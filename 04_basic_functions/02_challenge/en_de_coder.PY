@@ -1,5 +1,5 @@
 def encode(message):
-    if not message:
+    if message is None:
         return "Empty input"
     
     encoded_message = []
@@ -9,7 +9,7 @@ def encode(message):
     return ' '.join(encoded_message)
 
 def decode(encoded_message):
-    if not encoded_message:
+    if encoded_message is None:
         return "Empty input"
     
     decoded_message = []
