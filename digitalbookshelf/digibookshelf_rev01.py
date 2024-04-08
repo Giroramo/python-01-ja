@@ -69,6 +69,10 @@ def main():
     books = []
     slashs = "///////////////////"
     while True: #メニューごとの入力処理
+        title = ("")
+        old_title = ("")
+        new_title = ("")
+        keyword = ("")
         display_menu()
         choice = input("Please select from 1 to 6 \n")
         #メニュー１Add book の入力と表示
@@ -110,14 +114,16 @@ def main():
                         display_statemenu()
                         status = input()
                         if status == "1" :
-                            edit_status(books, title, "read")
+                            edit_status(books, new_title, "read")
+                            #edit_status(books, title, "read")
                             print(slashs)
                             print("registerd")                   
                             print(slashs)
                             print("\n")
                             break
                         elif status =="2":
-                            edit_status(books, title, "unread")
+                            edit_status(books, new_title, "unread")
+                            #edit_status(books, title, "unread")
                             print(slashs)
                             print("registerd")                   
                             print(slashs)
